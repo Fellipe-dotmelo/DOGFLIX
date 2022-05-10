@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root{
+    --azul_titulo: rgba(15, 15, 162, 0.839);
+    --preta: #141414;
+    --linkCor: #0B8FA3;
+
+    --fonte: 'Arial Black';
+    --fontenormal: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--preta);
+    font-family: var(--fontenormal);
+    color: white;
+}
+
+header > .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo{
+    color: var(--azul_titulo);
+    font-family: var(--fonte);
+    font-size: 2.5em;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--linkCor);
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #ccc;
+    border-bottom: 2px solid #11118C;
+    transition: .3s ease all;
+
+}
+
+.filme-principal div.image{
+    background-size: cover;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)), url('/img/akita_dog.jpg');
+    
+
+    min-height: 85vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 7px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.botao_interativo{
+    cursor: pointer;
+}
+
+#bt{
+    display: none;
+}
